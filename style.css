@@ -1,0 +1,320 @@
+:root {
+  --primary: #a67535;
+  --bg: #010101;
+}
+
+* {
+  margin: o;
+  padding: o;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1.4rem; 7%;
+background-color: rgba(1, 1, 1, 0.8);
+border-bottom: 1px solid #5f421c;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 9999;
+}
+
+ .navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+ }
+
+ .navbar .navbar-logo span {
+  color: var(--primary);
+ }
+
+ .navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 0 2rem;
+ }
+
+ .navbar .navbar-nav a:hover {
+  color: var(--primary);
+ }
+
+ .navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+ }
+
+ .navbar .navbar-extra a:hover {
+  color: var(--primary);
+ }
+
+ /* search form */
+ .navbar .search-form {
+  top: 100%;
+  background-color: #fff;
+  width: 15rem;
+  height: 2rem;
+  display: flex;
+  align-items: center; 
+  margin: 1rem;
+ }
+
+ .navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.4rem;
+  color: var(--bg);
+  padding: 1rem;
+ }
+
+ .navbar .search-form label {
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  color: var(--bg);
+ }
+
+   
+   /* search form end */
+  
+
+ /* ISI AWAL */
+ .isi {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url('../img/head.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+ }
+
+ .isi::after {
+  content: ;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgb(1, 1, 6) 3%, rgba(73, 65, 65, 0) 25%);
+ }
+
+ .isi .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+ }
+
+ .isi .content h1 {
+  font-size: 3.2em;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgb(1, 1, 3, 0.5);
+  line-height: 1.2;
+ }
+
+ .isi .content h1 span {
+  color: var(--primary);
+ }
+
+ .isi .content p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+ }
+
+ .isi .content .t1 {
+  color: #fff;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1,1,3, 0.5);
+ }
+
+ /* About Section */
+ .about {
+  padding: 6rem 7% 1.4rem;
+ }
+
+ .about h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+ }
+
+ .about h2 span {
+  color: var(--primary);
+ }
+
+ .about .row {
+  display: flex;
+ }
+
+ .about .row .about-img {
+  flex: 1 1 60rem;
+ }
+
+ .about .row .about-img img {
+  width: 90%;
+ }
+
+ .dmenu {
+   padding: 6rem 7% 1.4rem;
+ }
+
+ .dmenu h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+ }
+
+ .dmenu h2 span {
+  color: var(--primary);
+ }
+
+
+ .dmenu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+ }
+
+ .dmenu .row .menu-card {
+  text-align: center;
+ }
+
+ .dmenu .row .menu-card img {
+  border-radius: 50%;
+  width: 80;
+ }
+
+ .dmenu .row .menu-card .menu-card-title {
+  margin: 0.5rem auto 0.5rem;
+ }
+ 
+ /* Kontak sesi */
+ .kontak h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+ }
+
+ .kontak h2 span {
+  color: var(--primary);
+ }
+
+ .kontak .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #222;
+  flex-wrap: wrap;
+ }
+
+ .kontak .row .map {
+  padding-left: 8rem;
+  padding-block: 2rem;
+ }
+
+ .kontak .row form {
+  flex: 1 1 45rem;
+  padding: 3.8rem 2.8rem;
+  text-align: center;
+ }
+
+ .kontak .row .input-grup input {
+  width: 60%;
+  padding: 0.5rem;
+  font-size: 1rem;
+ }
+
+ .kontak .row form .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary);
+  cursor: pointer;
+ }
+ /* Kontak sesi end*/
+
+ /* Footer sesi */
+ footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 0.5rem 0;
+  margin-top: 1rem;
+ }
+
+ footer .socials {
+  padding: 0.3rem 0;
+ }
+
+ footer .socials a {
+  color: #fff;
+  margin: 1rem;
+ }
+
+ footer .socials a:hover,
+ footer .links a:hover {
+  color: var(--bg);
+ }
+
+
+ footer .links {
+  ,margin-bottom: 1.4rem;
+ }
+
+ footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+ }
+ /* Footer sesi end */
+
+ html {
+  scroll-behavior: smooth;
+ }
+
+ /* media queries */
+
+ /* LAPTOP */
+@media (max-widht: 1366px) {
+  html {
+    font-size: 75%;
+  }
+} 
+
+ /* TABLET */
+ @media (max-widht: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+} 
+
+ /* MOBILE PHONE */
+ @media (max-widht: 450px) {
+  html {
+    font-size: 55%;
+  }
+} 
